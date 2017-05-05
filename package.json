@@ -1,0 +1,25 @@
+{
+  "name": "react-native-webviewbridge",
+  "version": "3.1.9",
+  "description": "react-native-webviewbridge react-native-webview-bridge react-native-bridge-webview react-native-bridgewebview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shenzhenjinma/react-native-webview-bridge.git"
+  },
+  "keywords": [
+    "react-native-webview-bridge",
+    "react-native-bridge-webview",
+    "react-native-webviewbridge",
+    "react-native-bridgewebview"
+  ],
+  "author": "root@68xg.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shenzhenjinma/react-native-webview-bridge/issues"
+  },
+  "homepage": "https://github.com/shenzhenjinma/react-native-webview-bridge#readme"
+}
