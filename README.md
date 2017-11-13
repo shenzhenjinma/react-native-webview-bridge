@@ -10,7 +10,7 @@ An  webview bridge for React Native.
 ```javascript
 <WebViewBridge
 	ref={webview => this.WebViewBridge = webview}
-	onMessage={{this.onMessage}}
+	onMessage={this.onMessage}
 	source={{uri:'http://youurl.com/aaa.html'}}
 />
 //网页发送信息给rn（string类型）  window.postMessage("发送的信息内容")
