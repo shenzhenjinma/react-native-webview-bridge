@@ -1,6 +1,6 @@
 {
   "name": "react-native-webviewbridge",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "description": "react-native-webviewbridge react-native-autoheight-webview react-native-auto-height-webview react-native-webview-bridge react-native-bridge-webview react-native-bridgewebview",
   "main": "index.js",
   "scripts": {

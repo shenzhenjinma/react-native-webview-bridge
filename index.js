@@ -12,7 +12,6 @@ const AUTO_HEIGHT='AUTO_HEIGHT';
 export default class WebViewBridge  extends Component {
     constructor(e){
         super(e);
-
     }
 
     autoHeight(){
@@ -35,7 +34,7 @@ export default class WebViewBridge  extends Component {
         this.props.onMessage && this.props.onMessage(e.nativeEvent.data);
     }
     //注入html代码让h5调用
-    _getInjectedJavaScript(){
+    getInjectedJavaScript(){
         const patchPostMessageFunction = ()=> {
             let originalPostMessage = window.postMessage;
             let patchedPostMessage = (message, targetOrigin, transfer)=> {
@@ -53,11 +52,11 @@ export default class WebViewBridge  extends Component {
         return (
             <View ref={view => this.webviewAutoHeight = view}>
                   <WebView
+                        {...this.props}
                         ref={webview => this.WebViewBridge = webview}
-                        injectedJavaScript={this._getInjectedJavaScript()}
+                        injectedJavaScript={this.getInjectedJavaScript()}
                         onMessage={e=>this._onMessage(e)}
                         onLoadEnd = {e=>this._onLoadEnd(e)}
-                        {...this.props}
                   />
             </View>
         );
