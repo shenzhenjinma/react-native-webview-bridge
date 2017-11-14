@@ -11,6 +11,7 @@ An  webview bridge for React Native.
 <WebViewBridge
 	ref={webview => this.WebViewBridge = webview}
 	onMessage={this.onMessage}
+	autoHeight={true}//如果使用自动高度
 	source={{uri:'http://youurl.com/aaa.html'}}
 />
 //网页发送信息给rn（string类型）  window.postMessage("发送的信息内容")

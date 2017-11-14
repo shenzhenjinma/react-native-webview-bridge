@@ -1,7 +1,7 @@
 {
   "name": "react-native-webviewbridge",
-  "version": "3.2.0",
-  "description": "react-native-webviewbridge react-native-webview-bridge react-native-bridge-webview react-native-bridgewebview",
+  "version": "3.2.1",
+  "description": "react-native-webviewbridge react-native-autoheight-webview react-native-auto-height-webview react-native-webview-bridge react-native-bridge-webview react-native-bridgewebview",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +14,9 @@
     "react-native-webview-bridge",
     "react-native-bridge-webview",
     "react-native-webviewbridge",
-    "react-native-bridgewebview"
+    "react-native-bridgewebview",
+    "react-native-autoheight-webview",
+    "react-native-auto-height-webview"
   ],
   "author": "root@68xg.com",
   "license": "ISC",

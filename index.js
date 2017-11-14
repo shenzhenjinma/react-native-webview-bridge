@@ -12,7 +12,7 @@ const AUTO_HEIGHT='AUTO_HEIGHT';
 export default class WebViewBridge  extends Component {
     constructor(e){
         super(e);
-        this.autoHeight();
+
     }
 
     autoHeight(){
@@ -21,6 +21,9 @@ export default class WebViewBridge  extends Component {
     runjs(js){
         const script = `window.postMessage(${js})`;
         this.WebViewBridge && this.WebViewBridge.injectJavaScript(script);
+    }
+    _onLoadEnd(e){
+        this.autoHeight();
     }
     _onMessage (e) {
         //此段代码判断是否自动高度标记，如果是就设置view高度
@@ -52,7 +55,8 @@ export default class WebViewBridge  extends Component {
                   <WebView
                         ref={webview => this.WebViewBridge = webview}
                         injectedJavaScript={this._getInjectedJavaScript()}
-                        onMessage={o=>this._onMessage(o)}
+                        onMessage={e=>this._onMessage(e)}
+                        onLoadEnd = {e=>this._onLoadEnd(e)}
                         {...this.props}
                   />
             </View>
